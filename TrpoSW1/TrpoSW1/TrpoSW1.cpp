@@ -55,9 +55,9 @@ void firstNumbers() {
 		cout << "Error";
 	}
 	else {
-		int i = 0, kk = number;
-		while (kk) {
-			kk /= 10;
+		int i = 0, cloneOfNum = number;
+		while (cloneOfNum) {
+			cloneOfNum /= 10;
 			i++;
 		}
 		cout << number / int(pow(10, (i - amountOfNum)));
@@ -102,7 +102,7 @@ void password() {
 	cout << "Task5:\n";
 	while (myPass[0] < '9' + 1) {
 		if (myPass == realPass) {
-			cout << "Password: " << myPass << '\n';
+			cout << "Password: " << myPass << endl;
 			return;
 		}
 		int j = 3;
